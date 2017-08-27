@@ -7,21 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0471E4981F51D7C2001BCBBD /* PopUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E4971F51D7C2001BCBBD /* PopUpButton.swift */; };
+		0471E49A1F51D9DD001BCBBD /* JournalPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E4991F51D9DD001BCBBD /* JournalPopUpViewController.swift */; };
+		0471E49D1F51F900001BCBBD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E49C1F51F900001BCBBD /* Extensions.swift */; };
+		04805F611F5086F100BDCE60 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04805F601F5086F100BDCE60 /* JournalViewController.swift */; };
+		04805F641F50881400BDCE60 /* JournalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04805F631F50881400BDCE60 /* JournalCell.swift */; };
+		04805F661F519F4800BDCE60 /* Journals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04805F651F519F4800BDCE60 /* Journals.swift */; };
+		04805F681F51A06100BDCE60 /* JournalPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04805F671F51A06100BDCE60 /* JournalPost.swift */; };
+		04A02CBF1F388A5400F5878A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A02CBE1F388A5400F5878A /* GoogleService-Info.plist */; };
+		04A02CC11F38D1FE00F5878A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A02CC01F38D1FE00F5878A /* SignInViewController.swift */; };
+		04A02CC51F38D30300F5878A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A02CC41F38D30300F5878A /* CustomButton.swift */; };
+		04A02CC71F38D32E00F5878A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A02CC61F38D32E00F5878A /* CustomTextField.swift */; };
 		04D027AB1F37DDE4007DBE4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D027AA1F37DDE4007DBE4A /* AppDelegate.swift */; };
-		04D027AD1F37DDE4007DBE4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D027AC1F37DDE4007DBE4A /* ViewController.swift */; };
+		04D027AD1F37DDE4007DBE4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D027AC1F37DDE4007DBE4A /* MainViewController.swift */; };
 		04D027B01F37DDE4007DBE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D027AE1F37DDE4007DBE4A /* Main.storyboard */; };
 		04D027B21F37DDE4007DBE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D027B11F37DDE4007DBE4A /* Assets.xcassets */; };
 		04D027B51F37DDE4007DBE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D027B31F37DDE4007DBE4A /* LaunchScreen.storyboard */; };
+		04DA54121F3B1BC000D8DA69 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA54111F3B1BC000D8DA69 /* AuthService.swift */; };
+		04DA54141F3B1D3F00D8DA69 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA54131F3B1D3F00D8DA69 /* DataService.swift */; };
+		04DA54161F3C89E900D8DA69 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA54151F3C89E900D8DA69 /* File.swift */; };
+		04E4DD531F3E5DD500B114A2 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4DD521F3E5DD500B114A2 /* RoundedView.swift */; };
+		04E4DD551F3FA78C00B114A2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4DD541F3FA78C00B114A2 /* SignUpViewController.swift */; };
+		69FC3F75648594B4B0909BE4 /* Pods_AppQuake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDBA3D37655C63B9D58866B /* Pods_AppQuake.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0471E4971F51D7C2001BCBBD /* PopUpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpButton.swift; sourceTree = "<group>"; };
+		0471E4991F51D9DD001BCBBD /* JournalPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalPopUpViewController.swift; sourceTree = "<group>"; };
+		0471E49C1F51F900001BCBBD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04805F601F5086F100BDCE60 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		04805F631F50881400BDCE60 /* JournalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalCell.swift; sourceTree = "<group>"; };
+		04805F651F519F4800BDCE60 /* Journals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journals.swift; sourceTree = "<group>"; };
+		04805F671F51A06100BDCE60 /* JournalPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalPost.swift; sourceTree = "<group>"; };
+		04A02CBE1F388A5400F5878A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04A02CC01F38D1FE00F5878A /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		04A02CC41F38D30300F5878A /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		04A02CC61F38D32E00F5878A /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		04D027A71F37DDE4007DBE4A /* AppQuake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppQuake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D027AA1F37DDE4007DBE4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04D027AC1F37DDE4007DBE4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04D027AC1F37DDE4007DBE4A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04D027AF1F37DDE4007DBE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04D027B11F37DDE4007DBE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D027B41F37DDE4007DBE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D027B61F37DDE4007DBE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D027C11F37E051007DBE4A /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
+		04D027C21F37E051007DBE4A /* Ubuntu-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BI.ttf"; sourceTree = "<group>"; };
+		04D027C31F37E051007DBE4A /* Ubuntu-C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-C.ttf"; sourceTree = "<group>"; };
+		04D027C41F37E051007DBE4A /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		04D027C51F37E051007DBE4A /* Ubuntu-LI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LI.ttf"; sourceTree = "<group>"; };
+		04D027C61F37E051007DBE4A /* Ubuntu-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-M.ttf"; sourceTree = "<group>"; };
+		04D027C71F37E051007DBE4A /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MI.ttf"; sourceTree = "<group>"; };
+		04D027C81F37E051007DBE4A /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		04D027C91F37E051007DBE4A /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-RI.ttf"; sourceTree = "<group>"; };
+		04D027CA1F37E051007DBE4A /* UbuntuMono-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-B.ttf"; sourceTree = "<group>"; };
+		04D027CB1F37E051007DBE4A /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
+		04D027CC1F37E051007DBE4A /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-R.ttf"; sourceTree = "<group>"; };
+		04D027CD1F37E051007DBE4A /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
+		04DA54111F3B1BC000D8DA69 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		04DA54131F3B1D3F00D8DA69 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		04DA54151F3C89E900D8DA69 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		04E4DD521F3E5DD500B114A2 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		04E4DD541F3FA78C00B114A2 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4502B61D5774BA3D501C143C /* Pods-AppQuake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppQuake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppQuake/Pods-AppQuake.debug.xcconfig"; sourceTree = "<group>"; };
+		9CDBA3D37655C63B9D58866B /* Pods_AppQuake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppQuake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA06528584256CD31CB29925 /* Pods-AppQuake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppQuake.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppQuake/Pods-AppQuake.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +78,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FC3F75648594B4B0909BE4 /* Pods_AppQuake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0471E4951F51C889001BCBBD /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04D027AC1F37DDE4007DBE4A /* MainViewController.swift */,
+				04A02CC01F38D1FE00F5878A /* SignInViewController.swift */,
+				04E4DD541F3FA78C00B114A2 /* SignUpViewController.swift */,
+				04805F601F5086F100BDCE60 /* JournalViewController.swift */,
+			);
+			name = MainControllers;
+			sourceTree = "<group>";
+		};
+		0471E4961F51C897001BCBBD /* PopUpControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0471E4991F51D9DD001BCBBD /* JournalPopUpViewController.swift */,
+			);
+			name = PopUpControllers;
+			sourceTree = "<group>";
+		};
+		0471E49B1F51F8EF001BCBBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0471E49C1F51F900001BCBBD /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		04805F621F5087E700BDCE60 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				04805F631F50881400BDCE60 /* JournalCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		04D0279E1F37DDE4007DBE4A = {
 			isa = PBXGroup;
 			children = (
 				04D027A91F37DDE4007DBE4A /* AppQuake */,
+				04D027C01F37E026007DBE4A /* Font */,
 				04D027A81F37DDE4007DBE4A /* Products */,
+				374E46F0608FA363047A5261 /* Pods */,
+				D95D69F9D734F11F18257493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +142,97 @@
 		04D027A91F37DDE4007DBE4A /* AppQuake */ = {
 			isa = PBXGroup;
 			children = (
+				0471E49B1F51F8EF001BCBBD /* Extensions */,
+				04805F621F5087E700BDCE60 /* TableViewCells */,
+				04D027BF1F37DFDE007DBE4A /* Firebase */,
+				04D027BE1F37DFD9007DBE4A /* Controller */,
+				04D027BD1F37DFD4007DBE4A /* View */,
+				04D027BC1F37DFCF007DBE4A /* Model */,
 				04D027AA1F37DDE4007DBE4A /* AppDelegate.swift */,
-				04D027AC1F37DDE4007DBE4A /* ViewController.swift */,
 				04D027AE1F37DDE4007DBE4A /* Main.storyboard */,
 				04D027B11F37DDE4007DBE4A /* Assets.xcassets */,
 				04D027B31F37DDE4007DBE4A /* LaunchScreen.storyboard */,
 				04D027B61F37DDE4007DBE4A /* Info.plist */,
+				04A02CBE1F388A5400F5878A /* GoogleService-Info.plist */,
+				04DA54151F3C89E900D8DA69 /* File.swift */,
 			);
 			path = AppQuake;
+			sourceTree = "<group>";
+		};
+		04D027BC1F37DFCF007DBE4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04805F651F519F4800BDCE60 /* Journals.swift */,
+				04805F671F51A06100BDCE60 /* JournalPost.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04D027BD1F37DFD4007DBE4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04A02CC41F38D30300F5878A /* CustomButton.swift */,
+				04A02CC61F38D32E00F5878A /* CustomTextField.swift */,
+				04E4DD521F3E5DD500B114A2 /* RoundedView.swift */,
+				0471E4971F51D7C2001BCBBD /* PopUpButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		04D027BE1F37DFD9007DBE4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0471E4961F51C897001BCBBD /* PopUpControllers */,
+				0471E4951F51C889001BCBBD /* MainControllers */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04D027BF1F37DFDE007DBE4A /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				04DA54111F3B1BC000D8DA69 /* AuthService.swift */,
+				04DA54131F3B1D3F00D8DA69 /* DataService.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		04D027C01F37E026007DBE4A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				04D027C11F37E051007DBE4A /* Ubuntu-B.ttf */,
+				04D027C21F37E051007DBE4A /* Ubuntu-BI.ttf */,
+				04D027C31F37E051007DBE4A /* Ubuntu-C.ttf */,
+				04D027C41F37E051007DBE4A /* Ubuntu-L.ttf */,
+				04D027C51F37E051007DBE4A /* Ubuntu-LI.ttf */,
+				04D027C61F37E051007DBE4A /* Ubuntu-M.ttf */,
+				04D027C71F37E051007DBE4A /* Ubuntu-MI.ttf */,
+				04D027C81F37E051007DBE4A /* Ubuntu-R.ttf */,
+				04D027C91F37E051007DBE4A /* Ubuntu-RI.ttf */,
+				04D027CA1F37E051007DBE4A /* UbuntuMono-B.ttf */,
+				04D027CB1F37E051007DBE4A /* UbuntuMono-BI.ttf */,
+				04D027CC1F37E051007DBE4A /* UbuntuMono-R.ttf */,
+				04D027CD1F37E051007DBE4A /* UbuntuMono-RI.ttf */,
+			);
+			name = Font;
+			path = AppQuake;
+			sourceTree = "<group>";
+		};
+		374E46F0608FA363047A5261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4502B61D5774BA3D501C143C /* Pods-AppQuake.debug.xcconfig */,
+				AA06528584256CD31CB29925 /* Pods-AppQuake.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D95D69F9D734F11F18257493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CDBA3D37655C63B9D58866B /* Pods_AppQuake.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04D027B91F37DDE4007DBE4A /* Build configuration list for PBXNativeTarget "AppQuake" */;
 			buildPhases = (
+				C22F30F15C4C102706CF6B42 /* [CP] Check Pods Manifest.lock */,
 				04D027A31F37DDE4007DBE4A /* Sources */,
 				04D027A41F37DDE4007DBE4A /* Frameworks */,
 				04D027A51F37DDE4007DBE4A /* Resources */,
+				9C53B2E7EB66906EDB30A847 /* [CP] Embed Pods Frameworks */,
+				C2BC4F10D4BFB08C65688CF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +271,7 @@
 					04D027A61F37DDE4007DBE4A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = V9669RC3VN;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D027B51F37DDE4007DBE4A /* LaunchScreen.storyboard in Resources */,
+				04A02CBF1F388A5400F5878A /* GoogleService-Info.plist in Resources */,
 				04D027B21F37DDE4007DBE4A /* Assets.xcassets in Resources */,
 				04D027B01F37DDE4007DBE4A /* Main.storyboard in Resources */,
 			);
@@ -132,13 +308,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C53B2E7EB66906EDB30A847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppQuake/Pods-AppQuake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C22F30F15C4C102706CF6B42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2BC4F10D4BFB08C65688CF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppQuake/Pods-AppQuake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04D027A31F37DDE4007DBE4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D027AD1F37DDE4007DBE4A /* ViewController.swift in Sources */,
+				04D027AD1F37DDE4007DBE4A /* MainViewController.swift in Sources */,
+				04805F661F519F4800BDCE60 /* Journals.swift in Sources */,
+				0471E49A1F51D9DD001BCBBD /* JournalPopUpViewController.swift in Sources */,
+				04805F611F5086F100BDCE60 /* JournalViewController.swift in Sources */,
 				04D027AB1F37DDE4007DBE4A /* AppDelegate.swift in Sources */,
+				0471E4981F51D7C2001BCBBD /* PopUpButton.swift in Sources */,
+				04A02CC71F38D32E00F5878A /* CustomTextField.swift in Sources */,
+				04A02CC11F38D1FE00F5878A /* SignInViewController.swift in Sources */,
+				04E4DD551F3FA78C00B114A2 /* SignUpViewController.swift in Sources */,
+				04805F681F51A06100BDCE60 /* JournalPost.swift in Sources */,
+				04A02CC51F38D30300F5878A /* CustomButton.swift in Sources */,
+				04DA54121F3B1BC000D8DA69 /* AuthService.swift in Sources */,
+				04DA54161F3C89E900D8DA69 /* File.swift in Sources */,
+				04DA54141F3B1D3F00D8DA69 /* DataService.swift in Sources */,
+				0471E49D1F51F900001BCBBD /* Extensions.swift in Sources */,
+				04E4DD531F3E5DD500B114A2 /* RoundedView.swift in Sources */,
+				04805F641F50881400BDCE60 /* JournalCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +498,7 @@
 		};
 		04D027BA1F37DDE4007DBE4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4502B61D5774BA3D501C143C /* Pods-AppQuake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V9669RC3VN;
@@ -272,6 +512,7 @@
 		};
 		04D027BB1F37DDE4007DBE4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA06528584256CD31CB29925 /* Pods-AppQuake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V9669RC3VN;
@@ -302,6 +543,7 @@
 				04D027BB1F37DDE4007DBE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

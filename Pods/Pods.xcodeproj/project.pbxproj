@@ -1,0 +1,1404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040675BFF0A816CA5845EEC0D5CF235A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9067CF121051126D406B542824B1835A /* UIKit.framework */; };
+		10113E207516DDCAC19E3B2FED7E12C4 /* LocksmithError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE014A2C051043CE8C93535B2F81BE /* LocksmithError.swift */; };
+		112C1F19DADCF15905CAB303BAFAE0FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE090FE2B1153BB641F384FEAE51958 /* QuartzCore.framework */; };
+		13EB929F72B356FC41F08CCF85D5D0C1 /* Locksmith-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC1973DC0832BCA62DEDEF50C5EF0AE /* Locksmith-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		140CD39A692D39FFD88267BED2D8D532 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 057756C98CD6BF8624B4F2B35DE5F204 /* GTMSessionFetcherService.m */; };
+		1495BCB330D338CEF2E39D10082B941C /* LocksmithAccessibleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3CB1D624773DFD8D01ADDB2D242C3B /* LocksmithAccessibleOption.swift */; };
+		1580DF16438339A342F9BE1FF8F460C0 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8C66EAFA3422EE7369786664A211C5 /* FSCalendarCalculator.m */; };
+		15F9229A82FBF89A858BB1FCABADD283 /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 24320107BDDF0C68C858C6D351FC2B61 /* GTMDebugSelectorValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B067AB341816E0C930C2B85822662F7 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CC25A4D89406CF5A43CCD8E388D3B /* FSCalendarConstants.m */; };
+		1CE2D76079B85A66C04827ACE7FCD42A /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4217F955C3A4AB15EFE96291AA5772 /* FSCalendarWeekdayView.m */; };
+		1D289D03369E7C05652B06DBA8CC3860 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF773BD52B69BBA30A0D55F9ADA24BC /* Foundation.framework */; };
+		1E6F4C1F5FC9D8C84C434BB45985FCFB /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9901D3648726795F9AE3653D9120161C /* GTMSessionUploadFetcher.m */; };
+		23476DA2212E3BC9DCFEDBB46FA57AF7 /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7BA1B2CBA123138590592F40659C065 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25C40E5227B25581C854804747C2C346 /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAF70339952B694DA51DABB1BBF5CE5 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		265F9A7A91C0118691815507A7B2BAA3 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A64AE12B5203BFDE586D042E280B014B /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2896E116FEA2955AC96FF9FD685AF42F /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8A2F8DD3FD40617AB332B5E3F36644 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A62A81BB0228784C850B11182751DDF /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C7B18095351A5A1E58895CD2473C07 /* FSCalendarHeaderView.m */; };
+		2FBA3F06910F40ADEC969F3BBFBB258D /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1452033B36367CEF89CD6ECB9B8829C1 /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39195CE4F51713267EFFB978CC6FF659 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3F01FB9857A5EE94BFFFC36FA44CFD /* GTMNSDictionary+URLArguments.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B629068F4BE1D7821957056F25E33C1 /* Locksmith-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6AC83BC4C00C677BF70A2E0415357F /* Locksmith-dummy.m */; };
+		42890EFA1A9960C220BFA8647831E467 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8681D8D27ACF4B9B376E738226F18E9F /* Security.framework */; };
+		4426E8092163677E84AC979178E4D1C0 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9CFC81C85E053683C92F2680C3192A /* FSCalendarDelegationFactory.m */; };
+		446B87B2CC643FB3776D976ACE86D52B /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B989775F75DABF93A9C72076616760 /* FSCalendarDelegationProxy.m */; };
+		46485D36E37F397B7F56EE76B3382C85 /* Dictionary_Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1F5A3576F3D78595306528A655DF70 /* Dictionary_Initializers.swift */; };
+		48A5794D7633E929CAF945CCE5D94916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF773BD52B69BBA30A0D55F9ADA24BC /* Foundation.framework */; };
+		496142BA8FDC455B8C71EB1D9D9CC520 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1204E18FAD84A7546EFF9E793B3153 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52C93F841C149E5040384D4D16FEEF53 /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EFB9AAA9628F2CCACBEF5EDA93F1F11 /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		542314CE597F5317E3B5EC240871C379 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9DE0541A1933439E52473786E8311 /* FSCalendar.m */; };
+		5C9BDDBB790ACE3711E8AD09A13E0FB2 /* LocksmithSecurityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F711B4FF7FAD88E408F91688A8A1404 /* LocksmithSecurityClass.swift */; };
+		612A5931CEEFDFA056FE645BDD784469 /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8641F166C3BDC7658BAE2ADBF553E2 /* Locksmith.swift */; };
+		63820AECBB54D04837685052499EE81A /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F0454C1F3F4E1C3A4994EE576063531C /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6575B03C92455416D43B5FC3573CB205 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF773BD52B69BBA30A0D55F9ADA24BC /* Foundation.framework */; };
+		731196A3A85E405C95CA491032AA77F7 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 67B2353ED2991F98EA3D479984B83C64 /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		769262B38568A11965BFD66EA31A90E4 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AC589128252317596ECE2EEC5060E6 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BACCF61D73B6C690CE657C66614E65F /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 1141F3BA8C17B3C71575CC8E1FCA9BC3 /* GTMSessionFetcherLogging.m */; };
+		7CB712C6A1E658068A0F9DAB530FB705 /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E06CFCF2DE1FFA9812780E2166AC58 /* GTMSessionFetcher.m */; };
+		8C40231EB625257A1865DC0DE1238660 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22AB9D6D9E1601B6EE2BBA8D8AC04AD /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F8D1EEFFD0AC14C975C78CAD0C9808F /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F30D929BAB284408465E3B3D60F369D /* GTMSessionFetcher-dummy.m */; };
+		90F3B321FA1128F332B327455D7D9512 /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0183ED12EE90C8B9C3B5394D7D6D19 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		930B84CCDC3E2EA44B5CC865461351E2 /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C365772F8DA38125E8E4F46F5CAC47C0 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A03275F6099149BA40499CCE7A70E8F /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EC437E033986D99786B37134EED031E3 /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BDC0925D8E08FC474E587429C30C279 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 04213FF509403898740DEEA7F0477A21 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E8E477A97C3217927C247DE59DB0C36 /* Pods-AppQuake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA62EE7B117043B640BBF66AE8C682D /* Pods-AppQuake-dummy.m */; };
+		9EB44D548B901D324940C86B706CCF96 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8681D8D27ACF4B9B376E738226F18E9F /* Security.framework */; };
+		A2AB2252C5CB27D158745F245C4ED39E /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 982ED0CF30D64B9AE56F5162539F51BE /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA0B9C265F96CA310C674C330D4C5592 /* Locksmith.h in Headers */ = {isa = PBXBuildFile; fileRef = 88142A5A2D6E2498B570524F67F4D81B /* Locksmith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF0C0CAFB987A1629E33E98A39D21663 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9115F88404DD0A0CC7E16F564AF0AF0B /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0E2B51DA63F5DB1D548B7DF9C61AB2B /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CA004D083B18F638A6A2CD8824A3D9BB /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2781A35A41CFD843CBB5848EFC63B66 /* GTMDebugThreadValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C5DF63D97E61B63B178FA6FB72F8A03 /* GTMDebugThreadValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BED4D8788EDB8A76CFE6FEABA1FDD8E7 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = B37260F6177FDD3A6DD44E858244EAB6 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF52BB057F0F4DC797F99E68F7D13511 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F537301C0C29B33E319A907F47BDA8D0 /* FSCalendarCollectionViewLayout.m */; };
+		C64BD437B5230451E0C518780C3CBFB1 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 361581223DA84453FE7B02A251E67EF9 /* FSCalendarAppearance.m */; };
+		C7F2728944FAD2DC68F09AE3BFA0FD45 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C0B0CFCF68B3DED1D966F574E164AF /* FSCalendarCollectionView.m */; };
+		C885F0BDB0D76B2A3F5771814A8BBCC5 /* GTMNSDictionary+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = C2AA6ADCBB03EFBF4FA1081C71D32FBF /* GTMNSDictionary+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC2443BEF39BB4254C340BAA445BCBD5 /* LocksmithInternetAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417652B89CD460B6EDD7CA96F2AE301A /* LocksmithInternetAuthenticationType.swift */; };
+		D234B23ACC5F69B9BE581EC70C15F8DE /* LocksmithInternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C5921B3517EF04FF7A8911F671221 /* LocksmithInternetProtocol.swift */; };
+		D277AD75FCE8A4A017F5E838AE31861C /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A75259F1D4A21E2D47B270C1BC846A8B /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6B69FFBB425A630FC96996A85E8C4D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF773BD52B69BBA30A0D55F9ADA24BC /* Foundation.framework */; };
+		D74107D5EBC14D8A32DA0676DE924F31 /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9328812BD251AD284C1CC5E07503F27D /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E198DD3328ED6387816E1006F0C3158B /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 700265826546F89CEC5CCB0A56BD1404 /* FSCalendarScopeHandle.m */; };
+		E30AC8217955089AAA345FB2FA2B3A25 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 07185AF80113DDBE8ED6AC68EAA24997 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3587E2F2FEAAC7D49B01E33D5157295 /* GTMNSString+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7F6832E59F9278F80775105D08FA88 /* GTMNSString+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40F22FE0A44496D85C81842FB80FDBD /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA65F2B5DE2EE4223EC649C409929A7 /* FSCalendarCell.m */; };
+		E7709B7C816F1751438D760389D65FD6 /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E141217C9E74F1A56A66DC8BF5A8A4A /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E77A3D83E21071EB418446DF6BFA612C /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF8BAF72C7C16275B12D59780D9D40 /* FSCalendarStickyHeader.m */; };
+		EE327E403CBB5E5021F440772E972A5C /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59702B7C4391A13553288D9F4E193EEC /* GoogleToolboxForMac-dummy.m */; };
+		F08E0DD97D4D2D079322A6E06B5CD37C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = DE85E5D06CA2D69A373B8F047035F26A /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F090AF4CF2A5B9EF10E9B098BEE17170 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A076BA6D9EE19181171382D5FB05C7 /* FSCalendarTransitionCoordinator.m */; };
+		F1096A0A09AFA00B08854120EF5E6CC7 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2EF7753194544846DB9A57AA4D77ED /* FSCalendar+Deprecated.m */; };
+		F117CDA64FF333D2C8E2E3D685870C08 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = CA69C60C0CC2C26386B73E306B9366CB /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F149D015CE6BAC5B74BFDB06DCE017DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF773BD52B69BBA30A0D55F9ADA24BC /* Foundation.framework */; };
+		F3F8A4E327471C4A5E0DF81C6EA1AB77 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E766C4834FCF5A241BB3A486B77C79A /* FSCalendar-dummy.m */; };
+		F4EEB230F3FB472D9695E591A300D123 /* Pods-AppQuake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A500D41768F0A7310CCD21F4795D97 /* Pods-AppQuake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5A0C2D01A0F92F3FF22409EAD5BEB6C /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D8644DBD42DC77D9AC19768CCF630C /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6498C02655C4E58AD3013140A40A328 /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = AB360C7E207DA12957F37941FD75643E /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD7819650A77515B551355DB3D9C91A7 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = D50B2AB4531ED840780E3005CF527341 /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEE203DF4A93179CE6E14E482DDB02ED /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FDED28D4620C7C896303B4AE854993 /* FSCalendarExtensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		741B85B1150A89FC1B6110AA04983D1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D04535608058A2FABC0D16935868FB9;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		94857991435B2C6F5D2822304B6A0065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23BA9083ED0D2392A167A8AFA04427FA;
+			remoteInfo = GTMSessionFetcher;
+		};
+		ED5F0C5C1624CC62C3F031D046EEF6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58F8527E74F83232A1EF0C9675CF627E;
+			remoteInfo = FSCalendar;
+		};
+		FDA47397D942A98DE0CD35BDC3F30ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92943306EC8070DF9CD02ECD505D2CD5;
+			remoteInfo = Locksmith;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04213FF509403898740DEEA7F0477A21 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		057756C98CD6BF8624B4F2B35DE5F204 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		07185AF80113DDBE8ED6AC68EAA24997 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		08BC1639E6147960848D399FE92658AA /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		09A949E58F883B8CD5AEA173CEEC9CF5 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		0B1F5A3576F3D78595306528A655DF70 /* Dictionary_Initializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary_Initializers.swift; path = Source/Dictionary_Initializers.swift; sourceTree = "<group>"; };
+		0BD9E336E77CF3CBBEDB2AE6B6C2C418 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		0C59474B544A5F1C33566686FC34BA92 /* Locksmith.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Locksmith.xcconfig; sourceTree = "<group>"; };
+		0E766C4834FCF5A241BB3A486B77C79A /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		1141F3BA8C17B3C71575CC8E1FCA9BC3 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		1231C78828C28646F6B7FE6B8330D96B /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1452033B36367CEF89CD6ECB9B8829C1 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		17285B6BB54B88595B24B485C22ADB56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DF8BAF72C7C16275B12D59780D9D40 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		18F8F06493F3996ADD90E8F383CA9DFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5CC25A4D89406CF5A43CCD8E388D3B /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		1C96A5810AAA13BA799B41218A70994F /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		24320107BDDF0C68C858C6D351FC2B61 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugSelectorValidation.h; path = DebugUtils/GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
+		24EE014A2C051043CE8C93535B2F81BE /* LocksmithError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithError.swift; path = Source/LocksmithError.swift; sourceTree = "<group>"; };
+		260D204B35990CAD33EC4681D1855372 /* Locksmith.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Locksmith.modulemap; sourceTree = "<group>"; };
+		2BE9DE0541A1933439E52473786E8311 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		2F30D929BAB284408465E3B3D60F369D /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		349EEC4BE0AC59A108E7DB8D00D051E1 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351692D23F8FA2937FACE244B57A7D3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361581223DA84453FE7B02A251E67EF9 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		3B3CB1D624773DFD8D01ADDB2D242C3B /* LocksmithAccessibleOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithAccessibleOption.swift; path = Source/LocksmithAccessibleOption.swift; sourceTree = "<group>"; };
+		3D7EE17BEC901616D9592401CD903D87 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		3EFB9AAA9628F2CCACBEF5EDA93F1F11 /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
+		4075DA87D0793CC44ADDE3C3501EA013 /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
+		417652B89CD460B6EDD7CA96F2AE301A /* LocksmithInternetAuthenticationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetAuthenticationType.swift; path = Source/LocksmithInternetAuthenticationType.swift; sourceTree = "<group>"; };
+		47E06CFCF2DE1FFA9812780E2166AC58 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		47F50AA6E0DA2B8942131597D8B20DCA /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		49E77807587E68324426E135ACDA53C3 /* Pods-AppQuake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppQuake.release.xcconfig"; sourceTree = "<group>"; };
+		4AE090FE2B1153BB641F384FEAE51958 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4E141217C9E74F1A56A66DC8BF5A8A4A /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		4F7F6832E59F9278F80775105D08FA88 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+URLArguments.h"; path = "Foundation/GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		5091BBAEAD077CEF1C4B22C4EE3A8AF6 /* Pods-AppQuake-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppQuake-resources.sh"; sourceTree = "<group>"; };
+		5205227A5579BC14CECA763731A81811 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E65B33798C4EEDE1B7A72E8C0E4CC5 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		59702B7C4391A13553288D9F4E193EEC /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		5CAF70339952B694DA51DABB1BBF5CE5 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		5E3FFF08F88A2F134E3FA1DF10835FC2 /* Pods-AppQuake-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppQuake-frameworks.sh"; sourceTree = "<group>"; };
+		67B2353ED2991F98EA3D479984B83C64 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		6C8641F166C3BDC7658BAE2ADBF553E2 /* Locksmith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locksmith.swift; path = Source/Locksmith.swift; sourceTree = "<group>"; };
+		6F8A2F8DD3FD40617AB332B5E3F36644 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		700265826546F89CEC5CCB0A56BD1404 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		74EEEC283D46CF7E5E304CDEF646D8EA /* Pods-AppQuake-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppQuake-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7658B755F2B90DCFF99F74FC649F35BA /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		7AF773BD52B69BBA30A0D55F9ADA24BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7F711B4FF7FAD88E408F91688A8A1404 /* LocksmithSecurityClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithSecurityClass.swift; path = Source/LocksmithSecurityClass.swift; sourceTree = "<group>"; };
+		8366AC4C50D3DD9C2F82A85DEAE3460F /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		8681D8D27ACF4B9B376E738226F18E9F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		88142A5A2D6E2498B570524F67F4D81B /* Locksmith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Locksmith.h; path = Source/Locksmith.h; sourceTree = "<group>"; };
+		8C5DF63D97E61B63B178FA6FB72F8A03 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
+		9067CF121051126D406B542824B1835A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9115F88404DD0A0CC7E16F564AF0AF0B /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		9328812BD251AD284C1CC5E07503F27D /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C0B0CFCF68B3DED1D966F574E164AF /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		95B989775F75DABF93A9C72076616760 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		96A8BA8C7664765B99ACAF1E3B251DC8 /* Pods-AppQuake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AppQuake.modulemap"; sourceTree = "<group>"; };
+		98170B73013924E21AEFC4342D8F816F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		982ED0CF30D64B9AE56F5162539F51BE /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		9901D3648726795F9AE3653D9120161C /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		99A076BA6D9EE19181171382D5FB05C7 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		99D8644DBD42DC77D9AC19768CCF630C /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		9A0183ED12EE90C8B9C3B5394D7D6D19 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		9ACCC083C62E37C640FC55AE02581DFF /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		9B1204E18FAD84A7546EFF9E793B3153 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		9F4217F955C3A4AB15EFE96291AA5772 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		A0C7B18095351A5A1E58895CD2473C07 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		A32D76F123287F467251D5B1E4A1AE50 /* Locksmith-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-prefix.pch"; sourceTree = "<group>"; };
+		A64AE12B5203BFDE586D042E280B014B /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		A75259F1D4A21E2D47B270C1BC846A8B /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		A9E06A8C16CF09A5B6CA2324AFDF9E26 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB360C7E207DA12957F37941FD75643E /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
+		AB424CC7844BE3AE23FE02E18BF3AA75 /* Pods-AppQuake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppQuake.debug.xcconfig"; sourceTree = "<group>"; };
+		ABC1973DC0832BCA62DEDEF50C5EF0AE /* Locksmith-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-umbrella.h"; sourceTree = "<group>"; };
+		ADE36D5B20A1584EB752147A17DD9D7B /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		AEA65F2B5DE2EE4223EC649C409929A7 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		B37260F6177FDD3A6DD44E858244EAB6 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		B3FDED28D4620C7C896303B4AE854993 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		B7ED7E752575689543DE180A6DA1A022 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		BA8C66EAFA3422EE7369786664A211C5 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		BF3F01FB9857A5EE94BFFFC36FA44CFD /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		C0E758C38EA0B44FA34284276C63F89F /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		C22AB9D6D9E1601B6EE2BBA8D8AC04AD /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		C2AA6ADCBB03EFBF4FA1081C71D32FBF /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		C365772F8DA38125E8E4F46F5CAC47C0 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		C4E1614E9F7C1FA3AB48458853FA1994 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA004D083B18F638A6A2CD8824A3D9BB /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		CA69C60C0CC2C26386B73E306B9366CB /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		CE6F7054CF42DB218396AD9D864F140A /* Pods_AppQuake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppQuake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A500D41768F0A7310CCD21F4795D97 /* Pods-AppQuake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppQuake-umbrella.h"; sourceTree = "<group>"; };
+		D50B2AB4531ED840780E3005CF527341 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		D77C5921B3517EF04FF7A8911F671221 /* LocksmithInternetProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetProtocol.swift; path = Source/LocksmithInternetProtocol.swift; sourceTree = "<group>"; };
+		DE85E5D06CA2D69A373B8F047035F26A /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		E26690DF778870099B29D20A06DFD145 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FAAAD88B1BEDB4E979DDBA8FD412F5 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		E38FEA59A0F109A28C8A45B51AFE8A30 /* Pods-AppQuake-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppQuake-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7BA1B2CBA123138590592F40659C065 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		E8E2D65DA442A1D9CC0D11263B10A446 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		EB6AC83BC4C00C677BF70A2E0415357F /* Locksmith-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Locksmith-dummy.m"; sourceTree = "<group>"; };
+		EC2EF7753194544846DB9A57AA4D77ED /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		EC437E033986D99786B37134EED031E3 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		ED9CFC81C85E053683C92F2680C3192A /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		F0454C1F3F4E1C3A4994EE576063531C /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		F4AC589128252317596ECE2EEC5060E6 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		F537301C0C29B33E319A907F47BDA8D0 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		FAA62EE7B117043B640BBF66AE8C682D /* Pods-AppQuake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppQuake-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BBDF3E69D1D9144399CBC5C387B78A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B69FFBB425A630FC96996A85E8C4D6 /* Foundation.framework in Frameworks */,
+				112C1F19DADCF15905CAB303BAFAE0FE /* QuartzCore.framework in Frameworks */,
+				040675BFF0A816CA5845EEC0D5CF235A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ACE4A3CD5D6902FA016D99BF2164404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D289D03369E7C05652B06DBA8CC3860 /* Foundation.framework in Frameworks */,
+				42890EFA1A9960C220BFA8647831E467 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D275EBF83F0D4F5B1C6704A4BD72508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6575B03C92455416D43B5FC3573CB205 /* Foundation.framework in Frameworks */,
+				9EB44D548B901D324940C86B706CCF96 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40101513C285F4E275BAC7B1CA04598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F149D015CE6BAC5B74BFDB06DCE017DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8E96EA896ADC4707F91D2E4091A2F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A5794D7633E929CAF945CCE5D94916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A11A9F8F9E2DA8CE2BFBB836429A4CC /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				1452033B36367CEF89CD6ECB9B8829C1 /* FSCalendar.h */,
+				2BE9DE0541A1933439E52473786E8311 /* FSCalendar.m */,
+				EC2EF7753194544846DB9A57AA4D77ED /* FSCalendar+Deprecated.m */,
+				04213FF509403898740DEEA7F0477A21 /* FSCalendarAppearance.h */,
+				361581223DA84453FE7B02A251E67EF9 /* FSCalendarAppearance.m */,
+				99D8644DBD42DC77D9AC19768CCF630C /* FSCalendarCalculator.h */,
+				BA8C66EAFA3422EE7369786664A211C5 /* FSCalendarCalculator.m */,
+				F0454C1F3F4E1C3A4994EE576063531C /* FSCalendarCell.h */,
+				AEA65F2B5DE2EE4223EC649C409929A7 /* FSCalendarCell.m */,
+				F4AC589128252317596ECE2EEC5060E6 /* FSCalendarCollectionView.h */,
+				93C0B0CFCF68B3DED1D966F574E164AF /* FSCalendarCollectionView.m */,
+				9328812BD251AD284C1CC5E07503F27D /* FSCalendarCollectionViewLayout.h */,
+				F537301C0C29B33E319A907F47BDA8D0 /* FSCalendarCollectionViewLayout.m */,
+				9115F88404DD0A0CC7E16F564AF0AF0B /* FSCalendarConstants.h */,
+				1C5CC25A4D89406CF5A43CCD8E388D3B /* FSCalendarConstants.m */,
+				C365772F8DA38125E8E4F46F5CAC47C0 /* FSCalendarDelegationFactory.h */,
+				ED9CFC81C85E053683C92F2680C3192A /* FSCalendarDelegationFactory.m */,
+				A64AE12B5203BFDE586D042E280B014B /* FSCalendarDelegationProxy.h */,
+				95B989775F75DABF93A9C72076616760 /* FSCalendarDelegationProxy.m */,
+				CA004D083B18F638A6A2CD8824A3D9BB /* FSCalendarDynamicHeader.h */,
+				A75259F1D4A21E2D47B270C1BC846A8B /* FSCalendarExtensions.h */,
+				B3FDED28D4620C7C896303B4AE854993 /* FSCalendarExtensions.m */,
+				E7BA1B2CBA123138590592F40659C065 /* FSCalendarHeaderView.h */,
+				A0C7B18095351A5A1E58895CD2473C07 /* FSCalendarHeaderView.m */,
+				6F8A2F8DD3FD40617AB332B5E3F36644 /* FSCalendarScopeHandle.h */,
+				700265826546F89CEC5CCB0A56BD1404 /* FSCalendarScopeHandle.m */,
+				07185AF80113DDBE8ED6AC68EAA24997 /* FSCalendarStickyHeader.h */,
+				18DF8BAF72C7C16275B12D59780D9D40 /* FSCalendarStickyHeader.m */,
+				9A0183ED12EE90C8B9C3B5394D7D6D19 /* FSCalendarTransitionCoordinator.h */,
+				99A076BA6D9EE19181171382D5FB05C7 /* FSCalendarTransitionCoordinator.m */,
+				B37260F6177FDD3A6DD44E858244EAB6 /* FSCalendarWeekdayView.h */,
+				9F4217F955C3A4AB15EFE96291AA5772 /* FSCalendarWeekdayView.m */,
+				C714A8E39899D8CD1B5AEE9FB2AF4894 /* Support Files */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		0C49680361F952ED5CF06B349AA077AF /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				DDFB7C28939FCC5E6B4C7B2F07343F3D /* Frameworks */,
+			);
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		12EDD1452E5B024E7078D61F6A57D624 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4882AA2861E68B6D4F24FECA1F8B5F68 /* Pods-AppQuake */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7940CB6FDE15034DDE5962054087827 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A6F54414FFB10CEC83B3BDD26D072F8 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				982ED0CF30D64B9AE56F5162539F51BE /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		248DEC47CF65B7FEC1DE45A7DFAE5282 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				CA69C60C0CC2C26386B73E306B9366CB /* GTMNSData+zlib.h */,
+				DE85E5D06CA2D69A373B8F047035F26A /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		2CBAB27C1CC792483473C8511D1138BF /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				EEFAABC9EE40F532F8F344089E145D5A /* DebugUtils */,
+				1A6F54414FFB10CEC83B3BDD26D072F8 /* Defines */,
+				248DEC47CF65B7FEC1DE45A7DFAE5282 /* NSData+zlib */,
+				A7FB397EC915B27C91CFC3ECD1793325 /* NSDictionary+URLArguments */,
+				F90229192BAF5758F80F77B5536747B3 /* NSString+URLArguments */,
+				ECDD2246FA1714B91A8AB63412D86542 /* Support Files */,
+			);
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		3F03DFD62D30395799F285497AAB986A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7ED7E752575689543DE180A6DA1A022 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47A64B076F4B820F7ED5F558DA77B554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349EEC4BE0AC59A108E7DB8D00D051E1 /* FSCalendar.framework */,
+				E26690DF778870099B29D20A06DFD145 /* GoogleToolboxForMac.framework */,
+				1231C78828C28646F6B7FE6B8330D96B /* GTMSessionFetcher.framework */,
+				A9E06A8C16CF09A5B6CA2324AFDF9E26 /* Locksmith.framework */,
+				CE6F7054CF42DB218396AD9D864F140A /* Pods_AppQuake.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4882AA2861E68B6D4F24FECA1F8B5F68 /* Pods-AppQuake */ = {
+			isa = PBXGroup;
+			children = (
+				18F8F06493F3996ADD90E8F383CA9DFC /* Info.plist */,
+				96A8BA8C7664765B99ACAF1E3B251DC8 /* Pods-AppQuake.modulemap */,
+				74EEEC283D46CF7E5E304CDEF646D8EA /* Pods-AppQuake-acknowledgements.markdown */,
+				E38FEA59A0F109A28C8A45B51AFE8A30 /* Pods-AppQuake-acknowledgements.plist */,
+				FAA62EE7B117043B640BBF66AE8C682D /* Pods-AppQuake-dummy.m */,
+				5E3FFF08F88A2F134E3FA1DF10835FC2 /* Pods-AppQuake-frameworks.sh */,
+				5091BBAEAD077CEF1C4B22C4EE3A8AF6 /* Pods-AppQuake-resources.sh */,
+				D2A500D41768F0A7310CCD21F4795D97 /* Pods-AppQuake-umbrella.h */,
+				AB424CC7844BE3AE23FE02E18BF3AA75 /* Pods-AppQuake.debug.xcconfig */,
+				49E77807587E68324426E135ACDA53C3 /* Pods-AppQuake.release.xcconfig */,
+			);
+			name = "Pods-AppQuake";
+			path = "Target Support Files/Pods-AppQuake";
+			sourceTree = "<group>";
+		};
+		4D6A2499B99754DCAF724A8BAFA6F340 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				3F03DFD62D30395799F285497AAB986A /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		54887C87369C68F18B27E3760720A090 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				9421BD13F53A10EC8289A714048FFD86 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		5E217F73F8E1835D63358C9A99910D5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCC083C62E37C640FC55AE02581DFF /* GTMSessionFetcher.modulemap */,
+				E8E2D65DA442A1D9CC0D11263B10A446 /* GTMSessionFetcher.xcconfig */,
+				2F30D929BAB284408465E3B3D60F369D /* GTMSessionFetcher-dummy.m */,
+				8366AC4C50D3DD9C2F82A85DEAE3460F /* GTMSessionFetcher-prefix.pch */,
+				3EFB9AAA9628F2CCACBEF5EDA93F1F11 /* GTMSessionFetcher-umbrella.h */,
+				C4E1614E9F7C1FA3AB48458853FA1994 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		6D2CEF18517AAF37342D7DC570B2FF1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADE36D5B20A1584EB752147A17DD9D7B /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7097A2EB3E703307E7168AFE5BEAA180 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC437E033986D99786B37134EED031E3 /* GTMSessionFetcher.h */,
+				47E06CFCF2DE1FFA9812780E2166AC58 /* GTMSessionFetcher.m */,
+				67B2353ED2991F98EA3D479984B83C64 /* GTMSessionFetcherLogging.h */,
+				1141F3BA8C17B3C71575CC8E1FCA9BC3 /* GTMSessionFetcherLogging.m */,
+				4E141217C9E74F1A56A66DC8BF5A8A4A /* GTMSessionFetcherService.h */,
+				057756C98CD6BF8624B4F2B35DE5F204 /* GTMSessionFetcherService.m */,
+				5CAF70339952B694DA51DABB1BBF5CE5 /* GTMSessionUploadFetcher.h */,
+				9901D3648726795F9AE3653D9120161C /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		70E5C41BAF0172F2984563CA5594B6ED /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9F3DC58B8AAC456FA5C88AD4B4520C2E /* Core */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				CD0BF048FF0A264BBCE5963ECCD94062 /* Pods */,
+				47A64B076F4B820F7ED5F558DA77B554 /* Products */,
+				12EDD1452E5B024E7078D61F6A57D624 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CE8D901F65AD32151694A151B7DA819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7658B755F2B90DCFF99F74FC649F35BA /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9421BD13F53A10EC8289A714048FFD86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D7EE17BEC901616D9592401CD903D87 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F3DC58B8AAC456FA5C88AD4B4520C2E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1C96A5810AAA13BA799B41218A70994F /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A10FD136D7ABCC0DA2477363B469E50F /* GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				7097A2EB3E703307E7168AFE5BEAA180 /* Core */,
+				5E217F73F8E1835D63358C9A99910D5B /* Support Files */,
+			);
+			path = GTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		A7FB397EC915B27C91CFC3ECD1793325 /* NSDictionary+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA6ADCBB03EFBF4FA1081C71D32FBF /* GTMNSDictionary+URLArguments.h */,
+				BF3F01FB9857A5EE94BFFFC36FA44CFD /* GTMNSDictionary+URLArguments.m */,
+			);
+			name = "NSDictionary+URLArguments";
+			sourceTree = "<group>";
+		};
+		B500474FE3D5F86BD94401F462597CFF /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				6D2CEF18517AAF37342D7DC570B2FF1A /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		C714A8E39899D8CD1B5AEE9FB2AF4894 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2FAAAD88B1BEDB4E979DDBA8FD412F5 /* FSCalendar.modulemap */,
+				4075DA87D0793CC44ADDE3C3501EA013 /* FSCalendar.xcconfig */,
+				0E766C4834FCF5A241BB3A486B77C79A /* FSCalendar-dummy.m */,
+				47F50AA6E0DA2B8942131597D8B20DCA /* FSCalendar-prefix.pch */,
+				C22AB9D6D9E1601B6EE2BBA8D8AC04AD /* FSCalendar-umbrella.h */,
+				5205227A5579BC14CECA763731A81811 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
+			sourceTree = "<group>";
+		};
+		CD0BF048FF0A264BBCE5963ECCD94062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70E5C41BAF0172F2984563CA5594B6ED /* Firebase */,
+				B500474FE3D5F86BD94401F462597CFF /* FirebaseAnalytics */,
+				D05E562D91DD6AE88BF671D323802D36 /* FirebaseAuth */,
+				0C49680361F952ED5CF06B349AA077AF /* FirebaseCore */,
+				4D6A2499B99754DCAF724A8BAFA6F340 /* FirebaseDatabase */,
+				54887C87369C68F18B27E3760720A090 /* FirebaseInstanceID */,
+				0A11A9F8F9E2DA8CE2BFBB836429A4CC /* FSCalendar */,
+				2CBAB27C1CC792483473C8511D1138BF /* GoogleToolboxForMac */,
+				A10FD136D7ABCC0DA2477363B469E50F /* GTMSessionFetcher */,
+				E18B748ACE42366E0C5A799D15D8FDEF /* Locksmith */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D05E562D91DD6AE88BF671D323802D36 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				8CE8D901F65AD32151694A151B7DA819 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		DDFB7C28939FCC5E6B4C7B2F07343F3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98170B73013924E21AEFC4342D8F816F /* FirebaseCore.framework */,
+				C0E758C38EA0B44FA34284276C63F89F /* FirebaseCoreDiagnostics.framework */,
+				09A949E58F883B8CD5AEA173CEEC9CF5 /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E18B748ACE42366E0C5A799D15D8FDEF /* Locksmith */ = {
+			isa = PBXGroup;
+			children = (
+				0B1F5A3576F3D78595306528A655DF70 /* Dictionary_Initializers.swift */,
+				88142A5A2D6E2498B570524F67F4D81B /* Locksmith.h */,
+				6C8641F166C3BDC7658BAE2ADBF553E2 /* Locksmith.swift */,
+				3B3CB1D624773DFD8D01ADDB2D242C3B /* LocksmithAccessibleOption.swift */,
+				24EE014A2C051043CE8C93535B2F81BE /* LocksmithError.swift */,
+				417652B89CD460B6EDD7CA96F2AE301A /* LocksmithInternetAuthenticationType.swift */,
+				D77C5921B3517EF04FF7A8911F671221 /* LocksmithInternetProtocol.swift */,
+				7F711B4FF7FAD88E408F91688A8A1404 /* LocksmithSecurityClass.swift */,
+				F577BF8C97F009D8159ACBAAD9F6A080 /* Support Files */,
+			);
+			path = Locksmith;
+			sourceTree = "<group>";
+		};
+		ECDD2246FA1714B91A8AB63412D86542 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56E65B33798C4EEDE1B7A72E8C0E4CC5 /* GoogleToolboxForMac.modulemap */,
+				0BD9E336E77CF3CBBEDB2AE6B6C2C418 /* GoogleToolboxForMac.xcconfig */,
+				59702B7C4391A13553288D9F4E193EEC /* GoogleToolboxForMac-dummy.m */,
+				08BC1639E6147960848D399FE92658AA /* GoogleToolboxForMac-prefix.pch */,
+				9B1204E18FAD84A7546EFF9E793B3153 /* GoogleToolboxForMac-umbrella.h */,
+				17285B6BB54B88595B24B485C22ADB56 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		EEFAABC9EE40F532F8F344089E145D5A /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				24320107BDDF0C68C858C6D351FC2B61 /* GTMDebugSelectorValidation.h */,
+				8C5DF63D97E61B63B178FA6FB72F8A03 /* GTMDebugThreadValidation.h */,
+				AB360C7E207DA12957F37941FD75643E /* GTMMethodCheck.h */,
+			);
+			name = DebugUtils;
+			sourceTree = "<group>";
+		};
+		F577BF8C97F009D8159ACBAAD9F6A080 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				351692D23F8FA2937FACE244B57A7D3C /* Info.plist */,
+				260D204B35990CAD33EC4681D1855372 /* Locksmith.modulemap */,
+				0C59474B544A5F1C33566686FC34BA92 /* Locksmith.xcconfig */,
+				EB6AC83BC4C00C677BF70A2E0415357F /* Locksmith-dummy.m */,
+				A32D76F123287F467251D5B1E4A1AE50 /* Locksmith-prefix.pch */,
+				ABC1973DC0832BCA62DEDEF50C5EF0AE /* Locksmith-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Locksmith";
+			sourceTree = "<group>";
+		};
+		F7940CB6FDE15034DDE5962054087827 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7AF773BD52B69BBA30A0D55F9ADA24BC /* Foundation.framework */,
+				4AE090FE2B1153BB641F384FEAE51958 /* QuartzCore.framework */,
+				8681D8D27ACF4B9B376E738226F18E9F /* Security.framework */,
+				9067CF121051126D406B542824B1835A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F90229192BAF5758F80F77B5536747B3 /* NSString+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				4F7F6832E59F9278F80775105D08FA88 /* GTMNSString+URLArguments.h */,
+				D50B2AB4531ED840780E3005CF527341 /* GTMNSString+URLArguments.m */,
+			);
+			name = "NSString+URLArguments";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2619B8263759E1D28157C9613814FC2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C40231EB625257A1865DC0DE1238660 /* FSCalendar-umbrella.h in Headers */,
+				2FBA3F06910F40ADEC969F3BBFBB258D /* FSCalendar.h in Headers */,
+				9BDC0925D8E08FC474E587429C30C279 /* FSCalendarAppearance.h in Headers */,
+				F5A0C2D01A0F92F3FF22409EAD5BEB6C /* FSCalendarCalculator.h in Headers */,
+				63820AECBB54D04837685052499EE81A /* FSCalendarCell.h in Headers */,
+				769262B38568A11965BFD66EA31A90E4 /* FSCalendarCollectionView.h in Headers */,
+				D74107D5EBC14D8A32DA0676DE924F31 /* FSCalendarCollectionViewLayout.h in Headers */,
+				AF0C0CAFB987A1629E33E98A39D21663 /* FSCalendarConstants.h in Headers */,
+				930B84CCDC3E2EA44B5CC865461351E2 /* FSCalendarDelegationFactory.h in Headers */,
+				265F9A7A91C0118691815507A7B2BAA3 /* FSCalendarDelegationProxy.h in Headers */,
+				B0E2B51DA63F5DB1D548B7DF9C61AB2B /* FSCalendarDynamicHeader.h in Headers */,
+				D277AD75FCE8A4A017F5E838AE31861C /* FSCalendarExtensions.h in Headers */,
+				23476DA2212E3BC9DCFEDBB46FA57AF7 /* FSCalendarHeaderView.h in Headers */,
+				2896E116FEA2955AC96FF9FD685AF42F /* FSCalendarScopeHandle.h in Headers */,
+				E30AC8217955089AAA345FB2FA2B3A25 /* FSCalendarStickyHeader.h in Headers */,
+				90F3B321FA1128F332B327455D7D9512 /* FSCalendarTransitionCoordinator.h in Headers */,
+				BED4D8788EDB8A76CFE6FEABA1FDD8E7 /* FSCalendarWeekdayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293736674DAFF98204041CC914976590 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496142BA8FDC455B8C71EB1D9D9CC520 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				15F9229A82FBF89A858BB1FCABADD283 /* GTMDebugSelectorValidation.h in Headers */,
+				B2781A35A41CFD843CBB5848EFC63B66 /* GTMDebugThreadValidation.h in Headers */,
+				A2AB2252C5CB27D158745F245C4ED39E /* GTMDefines.h in Headers */,
+				F6498C02655C4E58AD3013140A40A328 /* GTMMethodCheck.h in Headers */,
+				F117CDA64FF333D2C8E2E3D685870C08 /* GTMNSData+zlib.h in Headers */,
+				C885F0BDB0D76B2A3F5771814A8BBCC5 /* GTMNSDictionary+URLArguments.h in Headers */,
+				E3587E2F2FEAAC7D49B01E33D5157295 /* GTMNSString+URLArguments.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728D243467656AB628AD0B1412E1F057 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C93F841C149E5040384D4D16FEEF53 /* GTMSessionFetcher-umbrella.h in Headers */,
+				9A03275F6099149BA40499CCE7A70E8F /* GTMSessionFetcher.h in Headers */,
+				731196A3A85E405C95CA491032AA77F7 /* GTMSessionFetcherLogging.h in Headers */,
+				E7709B7C816F1751438D760389D65FD6 /* GTMSessionFetcherService.h in Headers */,
+				25C40E5227B25581C854804747C2C346 /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBE57286E7BEA15207900D6856F4B9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EEB230F3FB472D9695E591A300D123 /* Pods-AppQuake-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2051F2188C590373BF93A58D213D270 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EB929F72B356FC41F08CCF85D5D0C1 /* Locksmith-umbrella.h in Headers */,
+				AA0B9C265F96CA310C674C330D4C5592 /* Locksmith.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		097F07B719C4F887F894970C3EB413FB /* Pods-AppQuake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B88B1222E780F4B0C0FDB00E0345E93 /* Build configuration list for PBXNativeTarget "Pods-AppQuake" */;
+			buildPhases = (
+				9134423334B328E9B13B3F4147A79849 /* Sources */,
+				B40101513C285F4E275BAC7B1CA04598 /* Frameworks */,
+				EDBE57286E7BEA15207900D6856F4B9A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B11AF711A32EA1B2DE3846B3EE2728E /* PBXTargetDependency */,
+				BC7A1480509DA9B1373BCD375B119A7C /* PBXTargetDependency */,
+				5572FF3F63CDC86D7C3DFFDE19119CA4 /* PBXTargetDependency */,
+				5AA3C644B8C14C12F9E06F547E59F413 /* PBXTargetDependency */,
+			);
+			name = "Pods-AppQuake";
+			productName = "Pods-AppQuake";
+			productReference = CE6F7054CF42DB218396AD9D864F140A /* Pods_AppQuake.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23BA9083ED0D2392A167A8AFA04427FA /* GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39514D36BDF9D63FD9FD9A066F19465F /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */;
+			buildPhases = (
+				88DFD1A0D77D3C14F638FD23B3EAB63C /* Sources */,
+				2D275EBF83F0D4F5B1C6704A4BD72508 /* Frameworks */,
+				728D243467656AB628AD0B1412E1F057 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMSessionFetcher;
+			productName = GTMSessionFetcher;
+			productReference = 1231C78828C28646F6B7FE6B8330D96B /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58F8527E74F83232A1EF0C9675CF627E /* FSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74FD7073D5AD97572866DDCC4520EA6C /* Build configuration list for PBXNativeTarget "FSCalendar" */;
+			buildPhases = (
+				73C1AC31696D7390290117601DB355EF /* Sources */,
+				1BBDF3E69D1D9144399CBC5C387B78A3 /* Frameworks */,
+				2619B8263759E1D28157C9613814FC2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCalendar;
+			productName = FSCalendar;
+			productReference = 349EEC4BE0AC59A108E7DB8D00D051E1 /* FSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D04535608058A2FABC0D16935868FB9 /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEBB187FDCC7C53ECD2FC0EA27EB970 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				04BE4C037DAAFA60C326D6783F5E58AD /* Sources */,
+				FE8E96EA896ADC4707F91D2E4091A2F4 /* Frameworks */,
+				293736674DAFF98204041CC914976590 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = E26690DF778870099B29D20A06DFD145 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		92943306EC8070DF9CD02ECD505D2CD5 /* Locksmith */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3F14F49485BB4DB6DD235823E6D9A6 /* Build configuration list for PBXNativeTarget "Locksmith" */;
+			buildPhases = (
+				9E7BE1F2A7118BFE6EE01E7DC62C644F /* Sources */,
+				2ACE4A3CD5D6902FA016D99BF2164404 /* Frameworks */,
+				F2051F2188C590373BF93A58D213D270 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locksmith;
+			productName = Locksmith;
+			productReference = A9E06A8C16CF09A5B6CA2324AFDF9E26 /* Locksmith.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					097F07B719C4F887F894970C3EB413FB = {
+						LastSwiftMigration = 0830;
+					};
+					92943306EC8070DF9CD02ECD505D2CD5 = {
+						LastSwiftMigration = 0830;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 47A64B076F4B820F7ED5F558DA77B554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58F8527E74F83232A1EF0C9675CF627E /* FSCalendar */,
+				7D04535608058A2FABC0D16935868FB9 /* GoogleToolboxForMac */,
+				23BA9083ED0D2392A167A8AFA04427FA /* GTMSessionFetcher */,
+				92943306EC8070DF9CD02ECD505D2CD5 /* Locksmith */,
+				097F07B719C4F887F894970C3EB413FB /* Pods-AppQuake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BE4C037DAAFA60C326D6783F5E58AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE327E403CBB5E5021F440772E972A5C /* GoogleToolboxForMac-dummy.m in Sources */,
+				F08E0DD97D4D2D079322A6E06B5CD37C /* GTMNSData+zlib.m in Sources */,
+				39195CE4F51713267EFFB978CC6FF659 /* GTMNSDictionary+URLArguments.m in Sources */,
+				FD7819650A77515B551355DB3D9C91A7 /* GTMNSString+URLArguments.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C1AC31696D7390290117601DB355EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1096A0A09AFA00B08854120EF5E6CC7 /* FSCalendar+Deprecated.m in Sources */,
+				F3F8A4E327471C4A5E0DF81C6EA1AB77 /* FSCalendar-dummy.m in Sources */,
+				542314CE597F5317E3B5EC240871C379 /* FSCalendar.m in Sources */,
+				C64BD437B5230451E0C518780C3CBFB1 /* FSCalendarAppearance.m in Sources */,
+				1580DF16438339A342F9BE1FF8F460C0 /* FSCalendarCalculator.m in Sources */,
+				E40F22FE0A44496D85C81842FB80FDBD /* FSCalendarCell.m in Sources */,
+				C7F2728944FAD2DC68F09AE3BFA0FD45 /* FSCalendarCollectionView.m in Sources */,
+				BF52BB057F0F4DC797F99E68F7D13511 /* FSCalendarCollectionViewLayout.m in Sources */,
+				1B067AB341816E0C930C2B85822662F7 /* FSCalendarConstants.m in Sources */,
+				4426E8092163677E84AC979178E4D1C0 /* FSCalendarDelegationFactory.m in Sources */,
+				446B87B2CC643FB3776D976ACE86D52B /* FSCalendarDelegationProxy.m in Sources */,
+				FEE203DF4A93179CE6E14E482DDB02ED /* FSCalendarExtensions.m in Sources */,
+				2A62A81BB0228784C850B11182751DDF /* FSCalendarHeaderView.m in Sources */,
+				E198DD3328ED6387816E1006F0C3158B /* FSCalendarScopeHandle.m in Sources */,
+				E77A3D83E21071EB418446DF6BFA612C /* FSCalendarStickyHeader.m in Sources */,
+				F090AF4CF2A5B9EF10E9B098BEE17170 /* FSCalendarTransitionCoordinator.m in Sources */,
+				1CE2D76079B85A66C04827ACE7FCD42A /* FSCalendarWeekdayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DFD1A0D77D3C14F638FD23B3EAB63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8D1EEFFD0AC14C975C78CAD0C9808F /* GTMSessionFetcher-dummy.m in Sources */,
+				7CB712C6A1E658068A0F9DAB530FB705 /* GTMSessionFetcher.m in Sources */,
+				7BACCF61D73B6C690CE657C66614E65F /* GTMSessionFetcherLogging.m in Sources */,
+				140CD39A692D39FFD88267BED2D8D532 /* GTMSessionFetcherService.m in Sources */,
+				1E6F4C1F5FC9D8C84C434BB45985FCFB /* GTMSessionUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9134423334B328E9B13B3F4147A79849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8E477A97C3217927C247DE59DB0C36 /* Pods-AppQuake-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E7BE1F2A7118BFE6EE01E7DC62C644F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46485D36E37F397B7F56EE76B3382C85 /* Dictionary_Initializers.swift in Sources */,
+				3B629068F4BE1D7821957056F25E33C1 /* Locksmith-dummy.m in Sources */,
+				612A5931CEEFDFA056FE645BDD784469 /* Locksmith.swift in Sources */,
+				1495BCB330D338CEF2E39D10082B941C /* LocksmithAccessibleOption.swift in Sources */,
+				10113E207516DDCAC19E3B2FED7E12C4 /* LocksmithError.swift in Sources */,
+				CC2443BEF39BB4254C340BAA445BCBD5 /* LocksmithInternetAuthenticationType.swift in Sources */,
+				D234B23ACC5F69B9BE581EC70C15F8DE /* LocksmithInternetProtocol.swift in Sources */,
+				5C9BDDBB790ACE3711E8AD09A13E0FB2 /* LocksmithSecurityClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B11AF711A32EA1B2DE3846B3EE2728E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			target = 58F8527E74F83232A1EF0C9675CF627E /* FSCalendar */;
+			targetProxy = ED5F0C5C1624CC62C3F031D046EEF6A6 /* PBXContainerItemProxy */;
+		};
+		5572FF3F63CDC86D7C3DFFDE19119CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 7D04535608058A2FABC0D16935868FB9 /* GoogleToolboxForMac */;
+			targetProxy = 741B85B1150A89FC1B6110AA04983D1C /* PBXContainerItemProxy */;
+		};
+		5AA3C644B8C14C12F9E06F547E59F413 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Locksmith;
+			target = 92943306EC8070DF9CD02ECD505D2CD5 /* Locksmith */;
+			targetProxy = FDA47397D942A98DE0CD35BDC3F30ED0 /* PBXContainerItemProxy */;
+		};
+		BC7A1480509DA9B1373BCD375B119A7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = 23BA9083ED0D2392A167A8AFA04427FA /* GTMSessionFetcher */;
+			targetProxy = 94857991435B2C6F5D2822304B6A0065 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11D6F28C4A05ADF6F3A1F2351988AB9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD9E336E77CF3CBBEDB2AE6B6C2C418 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		229605E3E60A558E8A787EE9AC1B202F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4075DA87D0793CC44ADDE3C3501EA013 /* FSCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C24246B3E254B9C6F5B1B1BF4D7623D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD9E336E77CF3CBBEDB2AE6B6C2C418 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		390DF6A54F370E39F077F552464D9301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E77807587E68324426E135ACDA53C3 /* Pods-AppQuake.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppQuake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppQuake/Pods-AppQuake.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AppQuake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4799CFBC99D2EDFFDAFD3DEF3186789C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C59474B544A5F1C33566686FC34BA92 /* Locksmith.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Locksmith/Locksmith-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Locksmith/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Locksmith/Locksmith.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Locksmith;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5184430A2EB74B2F1AD2C0FC42C7F5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67DB80E18D2186D438F50D0359483C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E2D65DA442A1D9CC0D11263B10A446 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		722AF5C1FD6DB498D64284678BC7D74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E2D65DA442A1D9CC0D11263B10A446 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73D845169C007274504228832AD8E243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C12E56D1B04A20C86C4B490C15099404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4075DA87D0793CC44ADDE3C3501EA013 /* FSCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4DC8256A60A8AE1F42B6AD55D48772E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB424CC7844BE3AE23FE02E18BF3AA75 /* Pods-AppQuake.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppQuake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppQuake/Pods-AppQuake.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AppQuake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DBA888CC199D653E1E5E69F6F16EE207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C59474B544A5F1C33566686FC34BA92 /* Locksmith.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Locksmith/Locksmith-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Locksmith/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Locksmith/Locksmith.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Locksmith;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B88B1222E780F4B0C0FDB00E0345E93 /* Build configuration list for PBXNativeTarget "Pods-AppQuake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DC8256A60A8AE1F42B6AD55D48772E /* Debug */,
+				390DF6A54F370E39F077F552464D9301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D845169C007274504228832AD8E243 /* Debug */,
+				5184430A2EB74B2F1AD2C0FC42C7F5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39514D36BDF9D63FD9FD9A066F19465F /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB80E18D2186D438F50D0359483C7E /* Debug */,
+				722AF5C1FD6DB498D64284678BC7D74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEBB187FDCC7C53ECD2FC0EA27EB970 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D6F28C4A05ADF6F3A1F2351988AB9E /* Debug */,
+				2C24246B3E254B9C6F5B1B1BF4D7623D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74FD7073D5AD97572866DDCC4520EA6C /* Build configuration list for PBXNativeTarget "FSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229605E3E60A558E8A787EE9AC1B202F /* Debug */,
+				C12E56D1B04A20C86C4B490C15099404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3F14F49485BB4DB6DD235823E6D9A6 /* Build configuration list for PBXNativeTarget "Locksmith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA888CC199D653E1E5E69F6F16EE207 /* Debug */,
+				4799CFBC99D2EDFFDAFD3DEF3186789C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
